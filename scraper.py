@@ -30,8 +30,6 @@ import requests
 import lxml.html
 import datetime
 
-print("test")
-
 #demorgen.be
 html = scraperwiki.scrape("http://www.demorgen.be")
 root = lxml.html.fromstring(html)
