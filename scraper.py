@@ -25,10 +25,10 @@
 
 #!/usr/bin/env python
 
-#import scraperwiki
-#import requests
-#import lxml.html
-#import datetime
+import scraperwiki
+import requests
+import lxml.html
+import datetime
 
 print("test")
 
