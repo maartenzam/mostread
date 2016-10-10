@@ -30,6 +30,8 @@ import requests
 import lxml.html
 import datetime
 
+print("test")
+
 #demorgen.be
 html = scraperwiki.scrape("http://www.demorgen.be")
 root = lxml.html.fromstring(html)
@@ -44,7 +46,6 @@ timestamp = {
     'key': 'timestamp'
     }
 scraperwiki.sql.save(['key'], timestamp)
-print(timestamp)
 
 #demorgen.be
 for ind,el in enumerate(root.cssselect(".widget-most-recent ol li a"), 1):
